@@ -13,6 +13,7 @@ base:
 vertical_rhythm: $base_line_height_length
 heading:
   font_size: 14
+  font_color: #ff9233
   font_style: bold
   line_height: 1.2
   margin_bottom: $vertical_rhythm
