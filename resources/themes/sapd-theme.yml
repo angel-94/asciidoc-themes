@@ -21,7 +21,8 @@ base:
 vertical_rhythm: $base_line_height_length
 table:
   head:
-    border-bottom-style: dashed
+    border-bottom-width: 1
+    background-color: #f0f0f0
   body:
     stripe-background-color: #efefef
   font-size: 9
@@ -62,10 +63,10 @@ footer:
   height: 2.5cm
   line_height: 1.2
   recto_content:
-    left: © AMIS-SAPD
+    left: AMIS-SAPD
     right: |
       {page-number}
   verso_content:
-    left: © AMIS-SAPD
+    left: AMIS-SAPD
     right: |
       {page-number}
