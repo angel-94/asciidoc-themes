@@ -5,6 +5,12 @@ font:
       italic: roboto-italic.ttf
       bold: roboto-bold.ttf
       bold_italic: roboto-bold_italic.ttf
+    Ubuntu:
+      normal: Ubuntu-R.ttf
+      bold: Ubuntu-B.ttf
+      italic: Ubuntu-RI.ttf
+      bold_italic: Ubuntu-BI.ttf
+    fallbacks: [Ubuntu]
 title_page:
   logo_image: image:logo.png[]
 page:
@@ -14,7 +20,7 @@ page:
 base:
   align: justify
   font_color: #333333
-  font_family: Roboto
+  font_family: Ubuntu
   font_size: 10
   line_height_length: 17
   line_height: $base_line_height_length / $base_font_size
@@ -25,7 +31,7 @@ table:
     background-color: #f0f0f0
   body:
     stripe-background-color: #efefef
-  font-size: 9
+  font-size: 8
   header-cell:
     font-size: 10
   cell:
