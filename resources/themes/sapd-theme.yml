@@ -33,8 +33,8 @@ base:
   font_color: #333333
   font_family: Noto Serif
   font_size: 10
-#  line_height_length: 17
-#  line_height: $base_line_height_length / $base_font_size
+  line_height_length: 17
+  line_height: $base_line_height_length / $base_font_size
 vertical_rhythm: $base_line_height_length
 # literal is currently used for inline monospaced in prose and table cells
 literal:
