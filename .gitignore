@@ -4,3 +4,7 @@
 /demo/build/
 /demo/.gradle/
 
+.gradle/
+gradle/
+gradlew
+gradlew.bat

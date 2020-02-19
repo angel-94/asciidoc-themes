@@ -6,11 +6,21 @@ page:
   size: A4
 base:
   font_color: #333333
-  font_family: Helvetica
+  font_family: Roboto
   font_size: 10
   line_height_length: 17
   line_height: $base_line_height_length / $base_font_size
 vertical_rhythm: $base_line_height_length
+table:
+  head:
+    border-bottom-style: dashed
+  body:
+    stripe-background-color: #efefef
+  font-size: 9
+  header-cell:
+    font-size: 10
+  cell:
+    padding: 3
 heading:
   font_size: 14
   font_color: #ff9233
