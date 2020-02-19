@@ -4,6 +4,13 @@ page:
   layout: portrait
   margin: [3.2cm, 2cm, 2.2cm, 2cm]
   size: A4
+font:
+  catalog:
+    Roboto:
+      normal: roboto-normal.ttf
+      italic: roboto-italic.ttf
+      bold: roboto-bold.ttf
+      bold_italic: roboto-bold_italic.ttf
 base:
   font_color: #333333
   font_family: Roboto
