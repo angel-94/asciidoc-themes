@@ -33,9 +33,9 @@ base:
   font_color: #333333
   font_family: Noto Serif
   font_size: 10
-  line_height_length: 17
-  line_height: $base_line_height_length / $base_font_size
-vertical_rhythm: $base_line_height_length
+#  line_height_length: 17
+#  line_height: $base_line_height_length / $base_font_size
+#vertical_rhythm: $base_line_height_length
 # literal is currently used for inline monospaced in prose and table cells
 literal:
   font_color: B12146
@@ -87,7 +87,7 @@ footer:
 # code is used for source blocks (perhaps change to source or listing?)
 code:
   font_family: $literal_font_family
-  font_size: ceil($base_font_size)
+  font_size: 9
   line_height: 1.25
   # line_gap is an experimental property to control how a background color is applied to an inline block element
   line_gap: 3.8
