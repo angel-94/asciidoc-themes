@@ -10,7 +10,18 @@ font:
       bold: Ubuntu-B.ttf
       italic: Ubuntu-RI.ttf
       bold_italic: Ubuntu-BI.ttf
-    fallbacks: [Ubuntu]
+    # Noto Serif supports Latin, Latin-1 Supplement, Latin Extended-A, Greek, Cyrillic, Vietnamese & an assortment of symbols
+    Noto Serif:
+      normal: notoserif-regular-subset.ttf
+      bold: notoserif-bold-subset.ttf
+      italic: notoserif-italic-subset.ttf
+      bold_italic: notoserif-bold_italic-subset.ttf
+    # M+ 1mn supports ASCII and the circled numbers used for conums
+    M+ 1mn:
+      normal: mplus1mn-regular-subset.ttf
+      bold: mplus1mn-bold-subset.ttf
+      italic: mplus1mn-italic-subset.ttf
+      bold_italic: mplus1mn-bold_italic-subset.ttf
 title_page:
   logo_image: image:logo.png[]
 page:
@@ -20,11 +31,15 @@ page:
 base:
   align: justify
   font_color: #333333
-  font_family: Ubuntu
+  font_family: Noto Serif
   font_size: 10
   line_height_length: 17
   line_height: $base_line_height_length / $base_font_size
 vertical_rhythm: $base_line_height_length
+# literal is currently used for inline monospaced in prose and table cells
+literal:
+  font_color: B12146
+  font_family: M+ 1mn
 table:
   head:
     border-bottom-width: 1
@@ -76,5 +91,16 @@ footer:
     left: AMIS-SAPD
     right: |
       {page-number}
+# code is used for source blocks (perhaps change to source or listing?)
 code:
-  font_family: $base_font_family
+  font_color: $base_font_color
+  font_family: $literal_font_family
+  font_size: ceil($base_font_size)
+  padding: $code_font_size
+  line_height: 1.25
+  # line_gap is an experimental property to control how a background color is applied to an inline block element
+  line_gap: 3.8
+  background_color: F5F5F5
+  border_color: CCCCCC
+  border_radius: $base_border_radius
+  border_width: 0.75
